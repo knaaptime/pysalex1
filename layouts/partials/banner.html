@@ -1,7 +1,5 @@
 {{ "<!-- banner -->" | safeHTML }}
 
-<br>
-
 <!DOCTYPE html>
 <head>
   <title>Bootstrap 4 Image Slider</title>
@@ -13,10 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <style>
   .carousel-inner img {
-      width: 100%;
+      width: 65% !important;
       height: 100%;
   }
-  /*---Firefox Bug Fix --*/
+  /*---Firefox Bug Fix --*/ 
   .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
@@ -26,44 +24,7 @@
   }
   </style>
 </head>
-<body> 
 
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-	<!-- Indicators -->
-	<ol class="carousel-indicators">
-	  <li data-target="#demo" data-slide-to="0" class="active"></li>
-	  <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-	</ol> 
-	
-	<!-- The slideshow -->
-	<div class="carousel-inner" align="center">
-	  <div class="carousel-item active">
-      <a href="https://pysal.org/"> 
-    <img src="pysal1.png">
-      </a>
-	  </div>
-	  <div class="carousel-item">
-		<img src="rosedex.png">
-	  </div>
-	  <div class="carousel-item">
-		<img src="nyc.png">
-    </div>
-    <div class="carousel-item">
-      <img src="hisp.png">
-    </div>
-	</div>
-	
-	<!-- Left and right controls -->
-	<a class="carousel-control-prev" href="#demo" data-slide="prev">
-	  <span class="carousel-control-prev-icon"></span>
-	</a>
-	<a class="carousel-control-next" href="#demo" data-slide="next">
-	  <span class="carousel-control-next-icon"></span>
-	</a>
-  </div>
 
 {{ "<!-- /banner -->" | safeHTML }}
 
