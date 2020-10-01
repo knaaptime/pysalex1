@@ -1,0 +1,75 @@
+{{ "<!-- topics -->" | safeHTML }}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h4 class="section-title">{{ i18n "topics_title" | safeHTML }}</h4>
+      </div>
+      {{ "<!-- topic-item -->" | safeHTML }}
+      {{ range (where .Site.Pages "Type" "dev") }}
+      <div class="col-lg-3 col-sm-6 mb-3">
+        <container>
+        <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+          <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+          <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+          <img src="{{ .Params.Avatar}}"></img>
+          <h4>{{ .Params.Affiliation }}</h4>
+          <p class="mb-0">{{ .Params.Description }}</p>
+        </a>
+      </container>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+{{ "<!-- /topics -->" | safeHTML }}
+
+
+
+
+
+<div class= "container'>
+    
+</div>
+<!-- Card -->
+<div class="card">
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/photo9.jpg" alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+  
+    <!-- Social buttons -->
+    <div class="card-share">
+  
+      <div class="social-reveal">
+  
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb mt-0 mx-1"><i class="fab fa-facebook-f"></i></a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw mt-0 mx-1"><i class="fab fa-twitter"></i></a>
+        <!-- Google -->
+        <a type="button" class="btn-floating btn-gplus mt-0 mx-1"><i class="fab fa-google-plus-g"></i></a>
+  
+      </div>
+  
+      <!-- Button action -->
+      <a class="btn-floating btn-action share-toggle indigo ml-auto mr-4 float-right"><i class="fas fa-share-alt"></i></a>
+  
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body">
+  
+      <!-- Title -->
+      <h4 class="card-title">Card title</h4>
+      <hr>
+      <!-- Text -->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <button class="btn btn-indigo btn-rounded btn-md">Read more</button>
+  
+    </div>
+  </div>
+  <!-- Card -->
