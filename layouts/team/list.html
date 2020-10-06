@@ -116,13 +116,13 @@
           <div class="card-flyer">
             <div class="text-box">
               <div class="image-box">
-                <img src={{ .Params.Avatar }} alt="" />
+                <img src={{ .Params.Avatar }} alt="User's github avatar" />
               </div>
               <div class="text-container">
                 <h6>{{ .Title }}</h6>
                 <p> {{ .Params.Affiliation }} </p>
                 <br>
-                <a class="github-button" style="display: inline;" href="https://github.com/sjsrey" aria-label="Follow @sjsrey on GitHub">Follow @sjsrey</a>
+                <a class="github-button" style="display: inline;" href="https://github.com/{{ .Params.Ghname }}" aria-label="Follow @{{ .Params.Ghname }} on GitHub">Follow {{ .Params.Ghname }}</a>
 
               </div>
             </div>
