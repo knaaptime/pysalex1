@@ -104,27 +104,37 @@
 </div>
 <!--end hd-->
 
-<!--Cards --> 
-{{ "<!-- topics -->" | safeHTML }}
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 text-center">
-      <h2 class="section-title">{{ i18n "topics_title" | safeHTML }}</h2>
-    </div>
-    {{ "<!-- topic-item -->" | safeHTML }}
-    {{ range (where .Site.Pages "Type" "people") }}
-    <div class="col-lg-3 col-sm-6 mb-3">
-      <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-        <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
-        <h3 class="mb-3 mt-0">{{ .Title }}</h3>
-        <p class="mb-0">{{ .Params.Description }}</p>
-      </a>
-    </div>
-    {{ end }}
 
-  </div>
-</div>
-{{ "<!-- /topics -->" | safeHTML }}
+
+<div id="cards_landscape_wrap-2">
+  <div class="container">
+    <div class="row">
+      {{ range (where .Site.Pages "Type" "people") }}
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <a href="">
+          <div class="card-flyer">
+            <div class="text-box">
+              <div class="image-box">
+                <img src={{ .Params.Avatar }} alt="" />
+              </div>
+              <div class="text-container">
+                <h6>{{ .Title }}</h6>
+                <p> {{ .Params.Affiliation }} </p>
+                <br>
+                <a class="github-button" style="display: inline;" href="https://github.com/sjsrey" aria-label="Follow @sjsrey on GitHub">Follow @sjsrey</a>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+
+      </div>
+      </div>
+      </div>
+
 
 </div>
  
