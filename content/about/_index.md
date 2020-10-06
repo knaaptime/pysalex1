@@ -19,6 +19,6 @@ All interactions between community members are covered by the [PySAL Code of Con
 
 PySAL was founded as a collaboration between Serge Rey and Luc Anselin in 2005. The first formal release of PySAL was July 2010 and the project has continued on a six-month release cycle since then. In 2018, PySAL was restructured as a meta-package that brings together a family of packages for spatial data science.
 
-{% include team.html %}
+
 
 

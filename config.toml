@@ -123,11 +123,6 @@ subtitle='The Python Spatial Analysis Library'
 [Languages.en.params.carousel]
 
 
-#need to still keep this banner option for the title page. need to make it static without the 
-# carousel to have title and then add carousel below
-
-
-
 # call to action
 [Languages.en.params.cta]
 enable = true
